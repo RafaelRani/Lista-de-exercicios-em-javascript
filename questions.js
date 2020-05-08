@@ -87,8 +87,66 @@ module.exports = {
             'x': x,
             'y': y
         })
+    },
+
+    questao9(req, res){
+        var n1 = req.body.n1
+        var n2 = req.body.n2
+        var n3 = req.body.n3
+
+        var mensagem = "aprovado"
+        var media = (n1 + n2 + n3)/3
+
+        if(media < 6){
+            mensagem = "reprovado"
+        }
+        res.json({mensagem})
+    },
+
+    questao10(req, res){
+        var a = req.body.a
+        var b = req.body.b
+        var c = req.body.c
+
+        var maior = a
+        if(b > maior)
+            maior = b
+        if(c > maior)
+            maior = c
+
+        res.json({a,b,c,maior})
+    },
+
+    questao11(req, res){
+        var n1 = req.body.n1
+        var n2 = req.body.n2 
+
+        if((n1 % n2 == 0)||(n2 % n1 == 0)){
+            mensagem = "São multiplos!"
+        }else{
+            mensagem = "Não são múltiplos!"
+        }
+
+        res.json({mensagem})
+    },
+
+    questao12(req, res){
+        var idade = req.body.idade
+
+        var categoria = "idade inválida!"
+        if(idade >= 5 && idade <= 7){
+            categoria = "infantil A"
+        }else if(idade >= 8 && idade <= 10){
+            categoria = "infantil B"
+        }else if(idade >= 11 && idade <= 13){
+            categoria = "juvenil A"
+        }else if(idade >= 14 && idade <= 17){
+            categoria = "juvenil B"
+        }else if(idade >= 18){
+            categoria = "adulto"
+        }
+        
+        res.json({categoria})
     }
-
-
 
 }

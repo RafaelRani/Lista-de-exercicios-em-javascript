@@ -1,5 +1,9 @@
 # URL da Lista:
 https://www.inf.pucrs.br/~pinho/LaproI/Exercicios/SeqDecisao/lista1.htm
 
-Respondida até a questão 8... por enquanto
+- Entrada de dados por meio de formulário;
+- Considera-se que os dados estejam já validados;
+
+Respondida até a questão 12... por enquanto
+
 
