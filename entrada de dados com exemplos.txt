@@ -1,0 +1,111 @@
+questao1:
+
+{
+	"p1": {
+		"x": 2,
+		"y": -3
+	},
+	"p2": {
+		"x": 4,
+		"y": 5
+	}
+}
+
+questao2:
+
+{
+	"a": 5,
+	"b": 7,
+	"c": 9
+}
+
+questao3:
+
+{
+	"anos": 1,
+	"meses": 2,
+	"dias": 3
+}
+
+questao4:
+
+{
+	"dias": 428
+}
+
+questao5:
+
+{
+	"nota1": 4,
+	"nota2": 8,
+	"nota3": 7
+}
+
+questao6:
+
+{
+	"seg": 3675
+}
+
+questao7:
+
+{
+	"custo_fabrica": 35000
+}
+
+questao8:
+
+{
+	"a": 2,
+	"b": 8,
+	"c": 0,
+	"d": 9,
+	"e": 6,
+	"f": 15
+}
+
+questao9:
+
+{
+	"n1": 5.5,
+	"n2": 4,
+	"n3": 10
+}
+
+questao10:
+
+{
+	"a": 10,
+	"b": 8,
+	"c": 15
+}
+
+questao11:
+
+{
+	"n1": 14,
+	"n2": 7
+}
+
+questao12:
+
+{
+	"idade": 8
+}
+
+questao13:
+
+{
+	"n1": 8,
+	"n2": 9,
+	"n3": 3
+}
+
+questao14:
+
+{
+	"codigo": "SJR193360",
+	"nota1": 3,
+	"nota2": 5,
+	"nota3": 4
+}

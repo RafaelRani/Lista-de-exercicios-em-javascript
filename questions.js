@@ -133,7 +133,7 @@ module.exports = {
     questao12(req, res){
         var idade = req.body.idade
 
-        var categoria = "idade inválida!"
+        var categoria
         if(idade >= 5 && idade <= 7){
             categoria = "infantil A"
         }else if(idade >= 8 && idade <= 10){
@@ -144,9 +144,53 @@ module.exports = {
             categoria = "juvenil B"
         }else if(idade >= 18){
             categoria = "adulto"
+        }else{
+            categoria = "idade inválida!"
         }
         
         res.json({categoria})
+    },
+
+    questao13(req, res){
+        var n1 = req.body.n1
+        var n2 = req.body.n2
+        var n3 = req.body.n3
+
+        var maior = n1
+        if(n2 > maior)
+            maior = n2
+        if(n3 > maior)
+            maior = n3
+
+        res.json({maior})
+    },
+
+    questao14(req, res){
+        var cod = req.body.codigo
+        var n1 = req.body.nota1
+        var n2 = req.body.nota2
+        var n3 = req.body.nota3
+
+        var maior = n1
+        if(n2 > maior)
+            maior = n2
+        if(n3 > maior)
+            maior = n3
+        
+        media = (n1*3 + n2*3 + n3*3 - maior*3 + maior*4)/3
+
+        var situacao = "aprovado"
+        if(media < 5)
+            situacao = "reprovado"
+
+        res.json({
+            'codigo': cod,
+            'nota 1': n1,
+            'nota 2': n2,
+            'nota 3': n3,
+            'media': media,
+            'situacao': situacao
+        })
     }
 
 }

@@ -17,6 +17,8 @@ routes.get('/questao9', questions.questao9)
 routes.get('/questao10', questions.questao10)
 routes.get('/questao11', questions.questao11)
 routes.get('/questao12', questions.questao12)
+routes.get('/questao13', questions.questao13)
+routes.get('/questao14', questions.questao14)
 
 
 module.exports = routes
